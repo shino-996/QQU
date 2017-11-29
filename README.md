@@ -1,3 +1,1 @@
-# QQ Unrecall
-
-Prevent Mac QQ from revoking messages
+macOS 上的 QQ 防撤回, 需要提前装好 QQ →_→. 最好是编译一下再使用.
