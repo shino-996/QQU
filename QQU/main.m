@@ -3,7 +3,7 @@
 #import <string.h>
 
 #define LIBENV "DYLD_INSERT_LIBRARIES"
-#define LIBPATH "../Resources/"
+#define LIBPATH "../Frameworks/"
 #define LIBNAME "libQQUnrecall.dylib"
 
 #define HOOK "export " LIBENV "=%s" LIBPATH LIBNAME

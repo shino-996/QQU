@@ -9,9 +9,17 @@
 /* Begin PBXBuildFile section */
 		7273FF551EB83A7E007BEF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7273FF541EB83A7E007BEF76 /* main.m */; };
 		7273FF5A1EB83A7E007BEF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7273FF591EB83A7E007BEF76 /* Assets.xcassets */; };
+		B439EC201FCEAC4D006F294E /* libQQUnRecall.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B4AAC57D1FCE9CF200D4ADF3 /* libQQUnRecall.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B439EC211FCEAC4D006F294E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AAC5421FCE936C00D4ADF3;
+			remoteInfo = QQUnRecall;
+		};
 		B4AAC57C1FCE9CF200D4ADF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */;
@@ -27,6 +35,20 @@
 			remoteInfo = QQUnRecall;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B439EC231FCEAC4D006F294E /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B439EC201FCEAC4D006F294E /* libQQUnRecall.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7273FF4D1EB83A7E007BEF76 /* QQU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQU.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,12 +122,13 @@
 				7273FF491EB83A7E007BEF76 /* Sources */,
 				7273FF4A1EB83A7E007BEF76 /* Frameworks */,
 				7273FF4B1EB83A7E007BEF76 /* Resources */,
-				B4AAC5761FCE9CB100D4ADF3 /* ShellScript */,
+				B439EC231FCEAC4D006F294E /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				B4AAC57F1FCE9D0A00D4ADF3 /* PBXTargetDependency */,
+				B439EC221FCEAC4D006F294E /* PBXTargetDependency */,
 			);
 			name = QQU;
 			productName = QQU;
@@ -172,22 +195,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B4AAC5761FCE9CB100D4ADF3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cp -R -f $BUILT_PRODUCTS_DIR/libQQUnRecall.dylib $BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH/Resources/";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7273FF491EB83A7E007BEF76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,6 +207,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B439EC221FCEAC4D006F294E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QQUnRecall;
+			targetProxy = B439EC211FCEAC4D006F294E /* PBXContainerItemProxy */;
+		};
 		B4AAC57F1FCE9D0A00D4ADF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QQUnRecall;
