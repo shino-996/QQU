@@ -9,15 +9,31 @@
 /* Begin PBXBuildFile section */
 		7273FF551EB83A7E007BEF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7273FF541EB83A7E007BEF76 /* main.m */; };
 		7273FF5A1EB83A7E007BEF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7273FF591EB83A7E007BEF76 /* Assets.xcassets */; };
-		7273FF671EB840D4007BEF76 /* libQQUnrecall.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 7273FF661EB840D4007BEF76 /* libQQUnrecall.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4AAC57C1FCE9CF200D4ADF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4AAC5431FCE936C00D4ADF3;
+			remoteInfo = QQUnRecall;
+		};
+		B4AAC57E1FCE9D0A00D4ADF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AAC5421FCE936C00D4ADF3;
+			remoteInfo = QQUnRecall;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7273FF4D1EB83A7E007BEF76 /* QQU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7273FF541EB83A7E007BEF76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7273FF591EB83A7E007BEF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7273FF5E1EB83A7E007BEF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7273FF661EB840D4007BEF76 /* libQQUnrecall.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libQQUnrecall.dylib; sourceTree = "<group>"; };
+		B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QQUnRecall.xcodeproj; path = QQUnRecall/QQUnRecall.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +50,8 @@
 		7273FF441EB83A7E007BEF76 = {
 			isa = PBXGroup;
 			children = (
-				7273FF661EB840D4007BEF76 /* libQQUnrecall.dylib */,
 				7273FF4F1EB83A7E007BEF76 /* QQU */,
+				B4AAC5771FCE9CDD00D4ADF3 /* Frameworks */,
 				7273FF4E1EB83A7E007BEF76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,17 +69,25 @@
 			children = (
 				7273FF591EB83A7E007BEF76 /* Assets.xcassets */,
 				7273FF5E1EB83A7E007BEF76 /* Info.plist */,
-				7273FF531EB83A7E007BEF76 /* Supporting Files */,
+				7273FF541EB83A7E007BEF76 /* main.m */,
 			);
 			path = QQU;
 			sourceTree = "<group>";
 		};
-		7273FF531EB83A7E007BEF76 /* Supporting Files */ = {
+		B4AAC5771FCE9CDD00D4ADF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7273FF541EB83A7E007BEF76 /* main.m */,
+				B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */,
 			);
-			name = "Supporting Files";
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4AAC5791FCE9CF200D4ADF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4AAC57D1FCE9CF200D4ADF3 /* libQQUnRecall.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,10 +100,12 @@
 				7273FF491EB83A7E007BEF76 /* Sources */,
 				7273FF4A1EB83A7E007BEF76 /* Frameworks */,
 				7273FF4B1EB83A7E007BEF76 /* Resources */,
+				B4AAC5761FCE9CB100D4ADF3 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B4AAC57F1FCE9D0A00D4ADF3 /* PBXTargetDependency */,
 			);
 			name = QQU;
 			productName = QQU;
@@ -92,7 +118,7 @@
 		7273FF451EB83A7E007BEF76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Doveccl;
 				TargetAttributes = {
 					7273FF4C1EB83A7E007BEF76 = {
@@ -112,6 +138,12 @@
 			mainGroup = 7273FF441EB83A7E007BEF76;
 			productRefGroup = 7273FF4E1EB83A7E007BEF76 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B4AAC5791FCE9CF200D4ADF3 /* Products */;
+					ProjectRef = B4AAC5781FCE9CF200D4ADF3 /* QQUnRecall.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7273FF4C1EB83A7E007BEF76 /* QQU */,
@@ -119,17 +151,42 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B4AAC57D1FCE9CF200D4ADF3 /* libQQUnRecall.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libQQUnRecall.dylib;
+			remoteRef = B4AAC57C1FCE9CF200D4ADF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		7273FF4B1EB83A7E007BEF76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7273FF671EB840D4007BEF76 /* libQQUnrecall.dylib in Resources */,
 				7273FF5A1EB83A7E007BEF76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4AAC5761FCE9CB100D4ADF3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R -f $BUILT_PRODUCTS_DIR/libQQUnRecall.dylib $BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH/Resources/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7273FF491EB83A7E007BEF76 /* Sources */ = {
@@ -142,6 +199,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B4AAC57F1FCE9D0A00D4ADF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QQUnRecall;
+			targetProxy = B4AAC57E1FCE9D0A00D4ADF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		7273FF5F1EB83A7E007BEF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -153,7 +218,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -161,7 +228,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -201,7 +272,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -209,7 +282,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -275,6 +352,7 @@
 				7273FF631EB83A7E007BEF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
