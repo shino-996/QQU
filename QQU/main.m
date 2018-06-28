@@ -4,7 +4,7 @@
 
 #define LIBENV "DYLD_INSERT_LIBRARIES"
 #define LIBPATH "../Frameworks/"
-#define LIBNAME "libQQUnrecall.dylib"
+#define LIBNAME "libQQUnRecall.dylib"
 
 #define HOOK "export " LIBENV "=%s" LIBPATH LIBNAME
 #define RUN "/Applications/QQ.app/Contents/MacOS/QQ"
